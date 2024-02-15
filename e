@@ -32,7 +32,7 @@ def process_image(img):
     canny_image = cv2.Canny(gray, 100, 120)
     rows, cols = img.shape[:2]
     # Adjusted to make the region more square-like
-    square_size = min(cols, rows) * 0.4  # Using 40% of the smaller dimension to define the square size
+    square_size = min(cols, rows) * 0.4  
     center_col, center_row = cols // 2, rows // 2
     half_square = square_size // 2
     bottom_left = [center_col - half_square, center_row + half_square]
